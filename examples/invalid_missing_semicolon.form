@@ -1,0 +1,5 @@
+form BadForm {
+  section Broken {
+    field name: text
+  }
+}

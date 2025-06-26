@@ -1,0 +1,25 @@
+form ExampleForm {
+  meta author = "Your Team";
+
+  section UserInfo {
+    field username: text required pattern="[a-zA-Z0-9_]{3,15}" default="user123";
+    field bio: textarea rows=4 cols=50 default="Write about yourself here...";
+    field age: number min=13 max=120 required;
+    field emailAddress: email required pattern="^[\\w.-]+@[\\w.-]+\\.\\w{2,}$";
+    field birthday: date min="1900-01-01" max="2025-12-31" required;
+  }
+
+  section Preferences {
+    field agreeTerms: checkbox default=true;
+    field country: dropdown required ["USA", "Canada", "UK", "Australia"];
+    field gender: radio required ["Male", "Female", "Other", "Prefer not to say"];
+    field password: password required pattern=".{8,}";
+    field resume: file accept=".pdf,.doc,.docx" required;
+  }
+
+  validate {
+    if age < 13 {
+      error "You must be at least 13 years old to register.";
+    }
+  }
+}

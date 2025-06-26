@@ -1,0 +1,5 @@
+form Survey {
+  section Info {
+    field gender: radio;
+  }
+}

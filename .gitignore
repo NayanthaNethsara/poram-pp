@@ -1,0 +1,32 @@
+# === Build Artifacts ===
+formlang
+*.o
+*.out
+*.exe
+
+# === Flex/Bison Generated Files ===
+lex.yy.c
+parser.tab.c
+parser.tab.h
+
+# === Backup/Temp Files ===
+*~
+*.swp
+*.tmp
+.DS_Store
+
+# === Output Files ===
+output/*.html
+output/*.txt
+output/*.log
+
+# === Test Artifacts ===
+*.diff
+tests/*.html
+temp.html
+
+# === Logs ===
+*.log
+
+# === VS Code ===
+.vscode/
