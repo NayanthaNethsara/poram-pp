@@ -3,6 +3,7 @@ formlang
 *.o
 *.out
 *.exe
+poram
 
 # === Flex/Bison Generated Files ===
 lex.yy.c
