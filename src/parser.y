@@ -4,7 +4,6 @@
 #include <string.h>
 #include <stdbool.h>
 #include "model.h"
-#include "field_rules.h"
 
 
 int yylex(void);
