@@ -11,10 +11,4 @@ form Registration {
     field gender: radio ["Male", "Female", "Other"];
     field newsletter: checkbox default=true;
   }
-
-  validate {
-    if age < 19 {
-      error "You must be at least 19.";
-    }
-  }
 }
