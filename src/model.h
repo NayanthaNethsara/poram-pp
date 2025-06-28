@@ -48,5 +48,6 @@ typedef struct {
 } Form;
 
 extern Form current_form;
+void free_form(Form *form);
 
-#endif // MODEL_H
+#endif

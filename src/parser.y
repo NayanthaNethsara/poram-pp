@@ -33,6 +33,8 @@ bool has_options = false;
 %type <str> comparator
 %type <str> value
 
+%destructor { free($$); } <str>
+
 %%
 
 form : FORM IDENTIFIER LBRACE form_body RBRACE {
@@ -160,7 +162,12 @@ option_list
         current_field.option_count = 1;
     }
     | option_list COMMA STRING {
-        current_field.options[current_field.option_count++] = $3;
+        if (current_field.option_count < MAX_OPTIONS) {
+            current_field.options[current_field.option_count++] = $3;
+        } else {
+            fprintf(stderr, "Too many options for field %s\n", current_field.name);
+            exit(1);
+        }
     }
 ;
 

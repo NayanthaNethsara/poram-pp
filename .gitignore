@@ -1,5 +1,6 @@
 # === Build Artifacts ===
 formlang
+poram
 *.o
 *.out
 *.exe
