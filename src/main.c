@@ -3,8 +3,6 @@
 #include <unistd.h> 
 #include <string.h>
 #include "model.h"
-#include <bits/getopt_core.h>
-
 int yyparse(void);
 void generate_html(Form *form, FILE *out);
 
