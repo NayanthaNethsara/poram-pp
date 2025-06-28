@@ -47,6 +47,13 @@ typedef struct {
     int validation_count;
 } Form;
 
+typedef struct {
+    char *theme;   // "dark" or "light"
+    char *shape;   // "rounded" or "square"
+    char *style;   // "minimal" or "fancy"
+} OutputOptions;
+
+
 extern Form current_form;
 void free_form(Form *form);
 
