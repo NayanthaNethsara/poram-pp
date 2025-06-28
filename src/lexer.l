@@ -2,6 +2,10 @@
 #include "parser.tab.h"
 #include <string.h>
 #include <stdlib.h>
+
+int yywrap(void) {
+  return 1;
+}
 %}
 
 %x FIELD_STATE   
