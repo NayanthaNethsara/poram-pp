@@ -26,7 +26,7 @@ meta_block ::= "meta" IDENTIFIER "=" STRING ";"
 
 - Used to provide metadata like `author`, e.g.:
   ```poram
-  meta author = "Jane Doe";
+  meta author = "Nayantha Nethsara";
   ```
 
 ---
