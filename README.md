@@ -3,7 +3,7 @@
 
 **Poram++** is a domain-specific language (DSL) built in C using Lex and Yacc (Flex/Bison) for defining structured form UIs and generating static HTML output.
 
-It is modular, offline-ready, and comes with a command-line interface to control output formatting (theme, shape, and style). It powers the **[Poram++ GUI](https://github.com/NayanthaNethsara/poram-pp-gui)** — an Electron-based graphical frontend for previewing forms live.
+It is modular, offline-ready, and comes with a command-line interface to control output formatting (theme, shape, and style). It powers the **[Poram++ GUI](https://github.com/NayanthaNethsara/poram-gui-tauri)** — an Tauri-based graphical frontend for previewing forms live.
 
 ---
 
@@ -98,7 +98,7 @@ form Registration {
 
 Want to use this with a graphical interface?
 
-👉 Try the Electron GUI: **[Poram++ GUI](https://github.com/NayanthaNethsara/poram-pp-gui)**  
+👉 Try the Tauri GUI: **[Poram++ GUI](https://github.com/NayanthaNethsara/poram-gui-tauri)**  
 It connects to this DSL compiler, renders live preview, and supports exporting.
 
 ---
